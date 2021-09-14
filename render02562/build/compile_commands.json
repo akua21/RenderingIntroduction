@@ -1,0 +1,252 @@
+[
+{
+  "directory": "/home/akua21/University/Rendering/RenderingIntroduction/render02562/build",
+  "command": "/bin/x86_64-linux-gnu-g++-11  -I/home/akua21/University/Rendering/RenderingIntroduction/render02562 -I/home/akua21/University/Rendering/RenderingIntroduction/render02562/SOIL -I/home/akua21/University/Rendering/RenderingIntroduction/render02562/3rdparty/include  -Wall -g -o CMakeFiles/raytrace.dir/raytrace/Accelerator.cpp.o -c /home/akua21/University/Rendering/RenderingIntroduction/render02562/raytrace/Accelerator.cpp",
+  "file": "/home/akua21/University/Rendering/RenderingIntroduction/render02562/raytrace/Accelerator.cpp"
+},
+{
+  "directory": "/home/akua21/University/Rendering/RenderingIntroduction/render02562/build",
+  "command": "/bin/x86_64-linux-gnu-g++-11  -I/home/akua21/University/Rendering/RenderingIntroduction/render02562 -I/home/akua21/University/Rendering/RenderingIntroduction/render02562/SOIL -I/home/akua21/University/Rendering/RenderingIntroduction/render02562/3rdparty/include  -Wall -g -o CMakeFiles/raytrace.dir/raytrace/AreaLight.cpp.o -c /home/akua21/University/Rendering/RenderingIntroduction/render02562/raytrace/AreaLight.cpp",
+  "file": "/home/akua21/University/Rendering/RenderingIntroduction/render02562/raytrace/AreaLight.cpp"
+},
+{
+  "directory": "/home/akua21/University/Rendering/RenderingIntroduction/render02562/build",
+  "command": "/bin/x86_64-linux-gnu-g++-11  -I/home/akua21/University/Rendering/RenderingIntroduction/render02562 -I/home/akua21/University/Rendering/RenderingIntroduction/render02562/SOIL -I/home/akua21/University/Rendering/RenderingIntroduction/render02562/3rdparty/include  -Wall -g -o CMakeFiles/raytrace.dir/raytrace/BRDF.cpp.o -c /home/akua21/University/Rendering/RenderingIntroduction/render02562/raytrace/BRDF.cpp",
+  "file": "/home/akua21/University/Rendering/RenderingIntroduction/render02562/raytrace/BRDF.cpp"
+},
+{
+  "directory": "/home/akua21/University/Rendering/RenderingIntroduction/render02562/build",
+  "command": "/bin/x86_64-linux-gnu-g++-11  -I/home/akua21/University/Rendering/RenderingIntroduction/render02562 -I/home/akua21/University/Rendering/RenderingIntroduction/render02562/SOIL -I/home/akua21/University/Rendering/RenderingIntroduction/render02562/3rdparty/include  -Wall -g -o CMakeFiles/raytrace.dir/raytrace/BspTree.cpp.o -c /home/akua21/University/Rendering/RenderingIntroduction/render02562/raytrace/BspTree.cpp",
+  "file": "/home/akua21/University/Rendering/RenderingIntroduction/render02562/raytrace/BspTree.cpp"
+},
+{
+  "directory": "/home/akua21/University/Rendering/RenderingIntroduction/render02562/build",
+  "command": "/bin/x86_64-linux-gnu-g++-11  -I/home/akua21/University/Rendering/RenderingIntroduction/render02562 -I/home/akua21/University/Rendering/RenderingIntroduction/render02562/SOIL -I/home/akua21/University/Rendering/RenderingIntroduction/render02562/3rdparty/include  -Wall -g -o CMakeFiles/raytrace.dir/raytrace/Camera.cpp.o -c /home/akua21/University/Rendering/RenderingIntroduction/render02562/raytrace/Camera.cpp",
+  "file": "/home/akua21/University/Rendering/RenderingIntroduction/render02562/raytrace/Camera.cpp"
+},
+{
+  "directory": "/home/akua21/University/Rendering/RenderingIntroduction/render02562/build",
+  "command": "/bin/x86_64-linux-gnu-g++-11  -I/home/akua21/University/Rendering/RenderingIntroduction/render02562 -I/home/akua21/University/Rendering/RenderingIntroduction/render02562/SOIL -I/home/akua21/University/Rendering/RenderingIntroduction/render02562/3rdparty/include  -Wall -g -o CMakeFiles/raytrace.dir/raytrace/Directional.cpp.o -c /home/akua21/University/Rendering/RenderingIntroduction/render02562/raytrace/Directional.cpp",
+  "file": "/home/akua21/University/Rendering/RenderingIntroduction/render02562/raytrace/Directional.cpp"
+},
+{
+  "directory": "/home/akua21/University/Rendering/RenderingIntroduction/render02562/build",
+  "command": "/bin/x86_64-linux-gnu-g++-11  -I/home/akua21/University/Rendering/RenderingIntroduction/render02562 -I/home/akua21/University/Rendering/RenderingIntroduction/render02562/SOIL -I/home/akua21/University/Rendering/RenderingIntroduction/render02562/3rdparty/include  -Wall -g -o CMakeFiles/raytrace.dir/raytrace/Distribution1D.cpp.o -c /home/akua21/University/Rendering/RenderingIntroduction/render02562/raytrace/Distribution1D.cpp",
+  "file": "/home/akua21/University/Rendering/RenderingIntroduction/render02562/raytrace/Distribution1D.cpp"
+},
+{
+  "directory": "/home/akua21/University/Rendering/RenderingIntroduction/render02562/build",
+  "command": "/bin/x86_64-linux-gnu-g++-11  -I/home/akua21/University/Rendering/RenderingIntroduction/render02562 -I/home/akua21/University/Rendering/RenderingIntroduction/render02562/SOIL -I/home/akua21/University/Rendering/RenderingIntroduction/render02562/3rdparty/include  -Wall -g -o CMakeFiles/raytrace.dir/raytrace/Distribution2D.cpp.o -c /home/akua21/University/Rendering/RenderingIntroduction/render02562/raytrace/Distribution2D.cpp",
+  "file": "/home/akua21/University/Rendering/RenderingIntroduction/render02562/raytrace/Distribution2D.cpp"
+},
+{
+  "directory": "/home/akua21/University/Rendering/RenderingIntroduction/render02562/build",
+  "command": "/bin/x86_64-linux-gnu-g++-11  -I/home/akua21/University/Rendering/RenderingIntroduction/render02562 -I/home/akua21/University/Rendering/RenderingIntroduction/render02562/SOIL -I/home/akua21/University/Rendering/RenderingIntroduction/render02562/3rdparty/include  -Wall -g -o CMakeFiles/raytrace.dir/raytrace/GLViewController.cpp.o -c /home/akua21/University/Rendering/RenderingIntroduction/render02562/raytrace/GLViewController.cpp",
+  "file": "/home/akua21/University/Rendering/RenderingIntroduction/render02562/raytrace/GLViewController.cpp"
+},
+{
+  "directory": "/home/akua21/University/Rendering/RenderingIntroduction/render02562/build",
+  "command": "/bin/x86_64-linux-gnu-g++-11  -I/home/akua21/University/Rendering/RenderingIntroduction/render02562 -I/home/akua21/University/Rendering/RenderingIntroduction/render02562/SOIL -I/home/akua21/University/Rendering/RenderingIntroduction/render02562/3rdparty/include  -Wall -g -o CMakeFiles/raytrace.dir/raytrace/Gamma.cpp.o -c /home/akua21/University/Rendering/RenderingIntroduction/render02562/raytrace/Gamma.cpp",
+  "file": "/home/akua21/University/Rendering/RenderingIntroduction/render02562/raytrace/Gamma.cpp"
+},
+{
+  "directory": "/home/akua21/University/Rendering/RenderingIntroduction/render02562/build",
+  "command": "/bin/x86_64-linux-gnu-g++-11  -I/home/akua21/University/Rendering/RenderingIntroduction/render02562 -I/home/akua21/University/Rendering/RenderingIntroduction/render02562/SOIL -I/home/akua21/University/Rendering/RenderingIntroduction/render02562/3rdparty/include  -Wall -g -o CMakeFiles/raytrace.dir/raytrace/Glossy.cpp.o -c /home/akua21/University/Rendering/RenderingIntroduction/render02562/raytrace/Glossy.cpp",
+  "file": "/home/akua21/University/Rendering/RenderingIntroduction/render02562/raytrace/Glossy.cpp"
+},
+{
+  "directory": "/home/akua21/University/Rendering/RenderingIntroduction/render02562/build",
+  "command": "/bin/x86_64-linux-gnu-g++-11  -I/home/akua21/University/Rendering/RenderingIntroduction/render02562 -I/home/akua21/University/Rendering/RenderingIntroduction/render02562/SOIL -I/home/akua21/University/Rendering/RenderingIntroduction/render02562/3rdparty/include  -Wall -g -o CMakeFiles/raytrace.dir/raytrace/GlossyVolume.cpp.o -c /home/akua21/University/Rendering/RenderingIntroduction/render02562/raytrace/GlossyVolume.cpp",
+  "file": "/home/akua21/University/Rendering/RenderingIntroduction/render02562/raytrace/GlossyVolume.cpp"
+},
+{
+  "directory": "/home/akua21/University/Rendering/RenderingIntroduction/render02562/build",
+  "command": "/bin/x86_64-linux-gnu-g++-11  -I/home/akua21/University/Rendering/RenderingIntroduction/render02562 -I/home/akua21/University/Rendering/RenderingIntroduction/render02562/SOIL -I/home/akua21/University/Rendering/RenderingIntroduction/render02562/3rdparty/include  -Wall -g -o CMakeFiles/raytrace.dir/raytrace/HDRTexture.cpp.o -c /home/akua21/University/Rendering/RenderingIntroduction/render02562/raytrace/HDRTexture.cpp",
+  "file": "/home/akua21/University/Rendering/RenderingIntroduction/render02562/raytrace/HDRTexture.cpp"
+},
+{
+  "directory": "/home/akua21/University/Rendering/RenderingIntroduction/render02562/build",
+  "command": "/bin/x86_64-linux-gnu-g++-11  -I/home/akua21/University/Rendering/RenderingIntroduction/render02562 -I/home/akua21/University/Rendering/RenderingIntroduction/render02562/SOIL -I/home/akua21/University/Rendering/RenderingIntroduction/render02562/3rdparty/include  -Wall -g -o CMakeFiles/raytrace.dir/raytrace/Holdout.cpp.o -c /home/akua21/University/Rendering/RenderingIntroduction/render02562/raytrace/Holdout.cpp",
+  "file": "/home/akua21/University/Rendering/RenderingIntroduction/render02562/raytrace/Holdout.cpp"
+},
+{
+  "directory": "/home/akua21/University/Rendering/RenderingIntroduction/render02562/build",
+  "command": "/bin/x86_64-linux-gnu-g++-11  -I/home/akua21/University/Rendering/RenderingIntroduction/render02562 -I/home/akua21/University/Rendering/RenderingIntroduction/render02562/SOIL -I/home/akua21/University/Rendering/RenderingIntroduction/render02562/3rdparty/include  -Wall -g -o CMakeFiles/raytrace.dir/raytrace/InvSphereMap.cpp.o -c /home/akua21/University/Rendering/RenderingIntroduction/render02562/raytrace/InvSphereMap.cpp",
+  "file": "/home/akua21/University/Rendering/RenderingIntroduction/render02562/raytrace/InvSphereMap.cpp"
+},
+{
+  "directory": "/home/akua21/University/Rendering/RenderingIntroduction/render02562/build",
+  "command": "/bin/x86_64-linux-gnu-g++-11  -I/home/akua21/University/Rendering/RenderingIntroduction/render02562 -I/home/akua21/University/Rendering/RenderingIntroduction/render02562/SOIL -I/home/akua21/University/Rendering/RenderingIntroduction/render02562/3rdparty/include  -Wall -g -o CMakeFiles/raytrace.dir/raytrace/Lambertian.cpp.o -c /home/akua21/University/Rendering/RenderingIntroduction/render02562/raytrace/Lambertian.cpp",
+  "file": "/home/akua21/University/Rendering/RenderingIntroduction/render02562/raytrace/Lambertian.cpp"
+},
+{
+  "directory": "/home/akua21/University/Rendering/RenderingIntroduction/render02562/build",
+  "command": "/bin/x86_64-linux-gnu-g++-11  -I/home/akua21/University/Rendering/RenderingIntroduction/render02562 -I/home/akua21/University/Rendering/RenderingIntroduction/render02562/SOIL -I/home/akua21/University/Rendering/RenderingIntroduction/render02562/3rdparty/include  -Wall -g -o CMakeFiles/raytrace.dir/raytrace/MCGlossy.cpp.o -c /home/akua21/University/Rendering/RenderingIntroduction/render02562/raytrace/MCGlossy.cpp",
+  "file": "/home/akua21/University/Rendering/RenderingIntroduction/render02562/raytrace/MCGlossy.cpp"
+},
+{
+  "directory": "/home/akua21/University/Rendering/RenderingIntroduction/render02562/build",
+  "command": "/bin/x86_64-linux-gnu-g++-11  -I/home/akua21/University/Rendering/RenderingIntroduction/render02562 -I/home/akua21/University/Rendering/RenderingIntroduction/render02562/SOIL -I/home/akua21/University/Rendering/RenderingIntroduction/render02562/3rdparty/include  -Wall -g -o CMakeFiles/raytrace.dir/raytrace/MerlShader.cpp.o -c /home/akua21/University/Rendering/RenderingIntroduction/render02562/raytrace/MerlShader.cpp",
+  "file": "/home/akua21/University/Rendering/RenderingIntroduction/render02562/raytrace/MerlShader.cpp"
+},
+{
+  "directory": "/home/akua21/University/Rendering/RenderingIntroduction/render02562/build",
+  "command": "/bin/x86_64-linux-gnu-g++-11  -I/home/akua21/University/Rendering/RenderingIntroduction/render02562 -I/home/akua21/University/Rendering/RenderingIntroduction/render02562/SOIL -I/home/akua21/University/Rendering/RenderingIntroduction/render02562/3rdparty/include  -Wall -g -o CMakeFiles/raytrace.dir/raytrace/MerlTexture.cpp.o -c /home/akua21/University/Rendering/RenderingIntroduction/render02562/raytrace/MerlTexture.cpp",
+  "file": "/home/akua21/University/Rendering/RenderingIntroduction/render02562/raytrace/MerlTexture.cpp"
+},
+{
+  "directory": "/home/akua21/University/Rendering/RenderingIntroduction/render02562/build",
+  "command": "/bin/x86_64-linux-gnu-g++-11  -I/home/akua21/University/Rendering/RenderingIntroduction/render02562 -I/home/akua21/University/Rendering/RenderingIntroduction/render02562/SOIL -I/home/akua21/University/Rendering/RenderingIntroduction/render02562/3rdparty/include  -Wall -g -o CMakeFiles/raytrace.dir/raytrace/Mirror.cpp.o -c /home/akua21/University/Rendering/RenderingIntroduction/render02562/raytrace/Mirror.cpp",
+  "file": "/home/akua21/University/Rendering/RenderingIntroduction/render02562/raytrace/Mirror.cpp"
+},
+{
+  "directory": "/home/akua21/University/Rendering/RenderingIntroduction/render02562/build",
+  "command": "/bin/x86_64-linux-gnu-g++-11  -I/home/akua21/University/Rendering/RenderingIntroduction/render02562 -I/home/akua21/University/Rendering/RenderingIntroduction/render02562/SOIL -I/home/akua21/University/Rendering/RenderingIntroduction/render02562/3rdparty/include  -Wall -g -o CMakeFiles/raytrace.dir/raytrace/PanoramicLight.cpp.o -c /home/akua21/University/Rendering/RenderingIntroduction/render02562/raytrace/PanoramicLight.cpp",
+  "file": "/home/akua21/University/Rendering/RenderingIntroduction/render02562/raytrace/PanoramicLight.cpp"
+},
+{
+  "directory": "/home/akua21/University/Rendering/RenderingIntroduction/render02562/build",
+  "command": "/bin/x86_64-linux-gnu-g++-11  -I/home/akua21/University/Rendering/RenderingIntroduction/render02562 -I/home/akua21/University/Rendering/RenderingIntroduction/render02562/SOIL -I/home/akua21/University/Rendering/RenderingIntroduction/render02562/3rdparty/include  -Wall -g -o CMakeFiles/raytrace.dir/raytrace/PanoramicTexture.cpp.o -c /home/akua21/University/Rendering/RenderingIntroduction/render02562/raytrace/PanoramicTexture.cpp",
+  "file": "/home/akua21/University/Rendering/RenderingIntroduction/render02562/raytrace/PanoramicTexture.cpp"
+},
+{
+  "directory": "/home/akua21/University/Rendering/RenderingIntroduction/render02562/build",
+  "command": "/bin/x86_64-linux-gnu-g++-11  -I/home/akua21/University/Rendering/RenderingIntroduction/render02562 -I/home/akua21/University/Rendering/RenderingIntroduction/render02562/SOIL -I/home/akua21/University/Rendering/RenderingIntroduction/render02562/3rdparty/include  -Wall -g -o CMakeFiles/raytrace.dir/raytrace/ParticleTracer.cpp.o -c /home/akua21/University/Rendering/RenderingIntroduction/render02562/raytrace/ParticleTracer.cpp",
+  "file": "/home/akua21/University/Rendering/RenderingIntroduction/render02562/raytrace/ParticleTracer.cpp"
+},
+{
+  "directory": "/home/akua21/University/Rendering/RenderingIntroduction/render02562/build",
+  "command": "/bin/x86_64-linux-gnu-g++-11  -I/home/akua21/University/Rendering/RenderingIntroduction/render02562 -I/home/akua21/University/Rendering/RenderingIntroduction/render02562/SOIL -I/home/akua21/University/Rendering/RenderingIntroduction/render02562/3rdparty/include  -Wall -g -o CMakeFiles/raytrace.dir/raytrace/PathTracer.cpp.o -c /home/akua21/University/Rendering/RenderingIntroduction/render02562/raytrace/PathTracer.cpp",
+  "file": "/home/akua21/University/Rendering/RenderingIntroduction/render02562/raytrace/PathTracer.cpp"
+},
+{
+  "directory": "/home/akua21/University/Rendering/RenderingIntroduction/render02562/build",
+  "command": "/bin/x86_64-linux-gnu-g++-11  -I/home/akua21/University/Rendering/RenderingIntroduction/render02562 -I/home/akua21/University/Rendering/RenderingIntroduction/render02562/SOIL -I/home/akua21/University/Rendering/RenderingIntroduction/render02562/3rdparty/include  -Wall -g -o CMakeFiles/raytrace.dir/raytrace/Phong.cpp.o -c /home/akua21/University/Rendering/RenderingIntroduction/render02562/raytrace/Phong.cpp",
+  "file": "/home/akua21/University/Rendering/RenderingIntroduction/render02562/raytrace/Phong.cpp"
+},
+{
+  "directory": "/home/akua21/University/Rendering/RenderingIntroduction/render02562/build",
+  "command": "/bin/x86_64-linux-gnu-g++-11  -I/home/akua21/University/Rendering/RenderingIntroduction/render02562 -I/home/akua21/University/Rendering/RenderingIntroduction/render02562/SOIL -I/home/akua21/University/Rendering/RenderingIntroduction/render02562/3rdparty/include  -Wall -g -o CMakeFiles/raytrace.dir/raytrace/PhotonCaustics.cpp.o -c /home/akua21/University/Rendering/RenderingIntroduction/render02562/raytrace/PhotonCaustics.cpp",
+  "file": "/home/akua21/University/Rendering/RenderingIntroduction/render02562/raytrace/PhotonCaustics.cpp"
+},
+{
+  "directory": "/home/akua21/University/Rendering/RenderingIntroduction/render02562/build",
+  "command": "/bin/x86_64-linux-gnu-g++-11  -I/home/akua21/University/Rendering/RenderingIntroduction/render02562 -I/home/akua21/University/Rendering/RenderingIntroduction/render02562/SOIL -I/home/akua21/University/Rendering/RenderingIntroduction/render02562/3rdparty/include  -Wall -g -o CMakeFiles/raytrace.dir/raytrace/Plane.cpp.o -c /home/akua21/University/Rendering/RenderingIntroduction/render02562/raytrace/Plane.cpp",
+  "file": "/home/akua21/University/Rendering/RenderingIntroduction/render02562/raytrace/Plane.cpp"
+},
+{
+  "directory": "/home/akua21/University/Rendering/RenderingIntroduction/render02562/build",
+  "command": "/bin/x86_64-linux-gnu-g++-11  -I/home/akua21/University/Rendering/RenderingIntroduction/render02562 -I/home/akua21/University/Rendering/RenderingIntroduction/render02562/SOIL -I/home/akua21/University/Rendering/RenderingIntroduction/render02562/3rdparty/include  -Wall -g -o CMakeFiles/raytrace.dir/raytrace/PointLight.cpp.o -c /home/akua21/University/Rendering/RenderingIntroduction/render02562/raytrace/PointLight.cpp",
+  "file": "/home/akua21/University/Rendering/RenderingIntroduction/render02562/raytrace/PointLight.cpp"
+},
+{
+  "directory": "/home/akua21/University/Rendering/RenderingIntroduction/render02562/build",
+  "command": "/bin/x86_64-linux-gnu-g++-11  -I/home/akua21/University/Rendering/RenderingIntroduction/render02562 -I/home/akua21/University/Rendering/RenderingIntroduction/render02562/SOIL -I/home/akua21/University/Rendering/RenderingIntroduction/render02562/3rdparty/include  -Wall -g -o CMakeFiles/raytrace.dir/raytrace/QuatTrackBall.cpp.o -c /home/akua21/University/Rendering/RenderingIntroduction/render02562/raytrace/QuatTrackBall.cpp",
+  "file": "/home/akua21/University/Rendering/RenderingIntroduction/render02562/raytrace/QuatTrackBall.cpp"
+},
+{
+  "directory": "/home/akua21/University/Rendering/RenderingIntroduction/render02562/build",
+  "command": "/bin/x86_64-linux-gnu-g++-11  -I/home/akua21/University/Rendering/RenderingIntroduction/render02562 -I/home/akua21/University/Rendering/RenderingIntroduction/render02562/SOIL -I/home/akua21/University/Rendering/RenderingIntroduction/render02562/3rdparty/include  -Wall -g -o CMakeFiles/raytrace.dir/raytrace/Randomizer.cpp.o -c /home/akua21/University/Rendering/RenderingIntroduction/render02562/raytrace/Randomizer.cpp",
+  "file": "/home/akua21/University/Rendering/RenderingIntroduction/render02562/raytrace/Randomizer.cpp"
+},
+{
+  "directory": "/home/akua21/University/Rendering/RenderingIntroduction/render02562/build",
+  "command": "/bin/x86_64-linux-gnu-g++-11  -I/home/akua21/University/Rendering/RenderingIntroduction/render02562 -I/home/akua21/University/Rendering/RenderingIntroduction/render02562/SOIL -I/home/akua21/University/Rendering/RenderingIntroduction/render02562/3rdparty/include  -Wall -g -o CMakeFiles/raytrace.dir/raytrace/RayCaster.cpp.o -c /home/akua21/University/Rendering/RenderingIntroduction/render02562/raytrace/RayCaster.cpp",
+  "file": "/home/akua21/University/Rendering/RenderingIntroduction/render02562/raytrace/RayCaster.cpp"
+},
+{
+  "directory": "/home/akua21/University/Rendering/RenderingIntroduction/render02562/build",
+  "command": "/bin/x86_64-linux-gnu-g++-11  -I/home/akua21/University/Rendering/RenderingIntroduction/render02562 -I/home/akua21/University/Rendering/RenderingIntroduction/render02562/SOIL -I/home/akua21/University/Rendering/RenderingIntroduction/render02562/3rdparty/include  -Wall -g -o CMakeFiles/raytrace.dir/raytrace/RayTracer.cpp.o -c /home/akua21/University/Rendering/RenderingIntroduction/render02562/raytrace/RayTracer.cpp",
+  "file": "/home/akua21/University/Rendering/RenderingIntroduction/render02562/raytrace/RayTracer.cpp"
+},
+{
+  "directory": "/home/akua21/University/Rendering/RenderingIntroduction/render02562/build",
+  "command": "/bin/x86_64-linux-gnu-g++-11  -I/home/akua21/University/Rendering/RenderingIntroduction/render02562 -I/home/akua21/University/Rendering/RenderingIntroduction/render02562/SOIL -I/home/akua21/University/Rendering/RenderingIntroduction/render02562/3rdparty/include  -Wall -g -o CMakeFiles/raytrace.dir/raytrace/RenderEngine.cpp.o -c /home/akua21/University/Rendering/RenderingIntroduction/render02562/raytrace/RenderEngine.cpp",
+  "file": "/home/akua21/University/Rendering/RenderingIntroduction/render02562/raytrace/RenderEngine.cpp"
+},
+{
+  "directory": "/home/akua21/University/Rendering/RenderingIntroduction/render02562/build",
+  "command": "/bin/x86_64-linux-gnu-g++-11  -I/home/akua21/University/Rendering/RenderingIntroduction/render02562 -I/home/akua21/University/Rendering/RenderingIntroduction/render02562/SOIL -I/home/akua21/University/Rendering/RenderingIntroduction/render02562/3rdparty/include  -Wall -g -o CMakeFiles/raytrace.dir/raytrace/Scene.cpp.o -c /home/akua21/University/Rendering/RenderingIntroduction/render02562/raytrace/Scene.cpp",
+  "file": "/home/akua21/University/Rendering/RenderingIntroduction/render02562/raytrace/Scene.cpp"
+},
+{
+  "directory": "/home/akua21/University/Rendering/RenderingIntroduction/render02562/build",
+  "command": "/bin/x86_64-linux-gnu-g++-11  -I/home/akua21/University/Rendering/RenderingIntroduction/render02562 -I/home/akua21/University/Rendering/RenderingIntroduction/render02562/SOIL -I/home/akua21/University/Rendering/RenderingIntroduction/render02562/3rdparty/include  -Wall -g -o CMakeFiles/raytrace.dir/raytrace/Sphere.cpp.o -c /home/akua21/University/Rendering/RenderingIntroduction/render02562/raytrace/Sphere.cpp",
+  "file": "/home/akua21/University/Rendering/RenderingIntroduction/render02562/raytrace/Sphere.cpp"
+},
+{
+  "directory": "/home/akua21/University/Rendering/RenderingIntroduction/render02562/build",
+  "command": "/bin/x86_64-linux-gnu-g++-11  -I/home/akua21/University/Rendering/RenderingIntroduction/render02562 -I/home/akua21/University/Rendering/RenderingIntroduction/render02562/SOIL -I/home/akua21/University/Rendering/RenderingIntroduction/render02562/3rdparty/include  -Wall -g -o CMakeFiles/raytrace.dir/raytrace/SphereTexture.cpp.o -c /home/akua21/University/Rendering/RenderingIntroduction/render02562/raytrace/SphereTexture.cpp",
+  "file": "/home/akua21/University/Rendering/RenderingIntroduction/render02562/raytrace/SphereTexture.cpp"
+},
+{
+  "directory": "/home/akua21/University/Rendering/RenderingIntroduction/render02562/build",
+  "command": "/bin/x86_64-linux-gnu-g++-11  -I/home/akua21/University/Rendering/RenderingIntroduction/render02562 -I/home/akua21/University/Rendering/RenderingIntroduction/render02562/SOIL -I/home/akua21/University/Rendering/RenderingIntroduction/render02562/3rdparty/include  -Wall -g -o CMakeFiles/raytrace.dir/raytrace/Texture.cpp.o -c /home/akua21/University/Rendering/RenderingIntroduction/render02562/raytrace/Texture.cpp",
+  "file": "/home/akua21/University/Rendering/RenderingIntroduction/render02562/raytrace/Texture.cpp"
+},
+{
+  "directory": "/home/akua21/University/Rendering/RenderingIntroduction/render02562/build",
+  "command": "/bin/x86_64-linux-gnu-g++-11  -I/home/akua21/University/Rendering/RenderingIntroduction/render02562 -I/home/akua21/University/Rendering/RenderingIntroduction/render02562/SOIL -I/home/akua21/University/Rendering/RenderingIntroduction/render02562/3rdparty/include  -Wall -g -o CMakeFiles/raytrace.dir/raytrace/Textured.cpp.o -c /home/akua21/University/Rendering/RenderingIntroduction/render02562/raytrace/Textured.cpp",
+  "file": "/home/akua21/University/Rendering/RenderingIntroduction/render02562/raytrace/Textured.cpp"
+},
+{
+  "directory": "/home/akua21/University/Rendering/RenderingIntroduction/render02562/build",
+  "command": "/bin/x86_64-linux-gnu-g++-11  -I/home/akua21/University/Rendering/RenderingIntroduction/render02562 -I/home/akua21/University/Rendering/RenderingIntroduction/render02562/SOIL -I/home/akua21/University/Rendering/RenderingIntroduction/render02562/3rdparty/include  -Wall -g -o CMakeFiles/raytrace.dir/raytrace/Transparent.cpp.o -c /home/akua21/University/Rendering/RenderingIntroduction/render02562/raytrace/Transparent.cpp",
+  "file": "/home/akua21/University/Rendering/RenderingIntroduction/render02562/raytrace/Transparent.cpp"
+},
+{
+  "directory": "/home/akua21/University/Rendering/RenderingIntroduction/render02562/build",
+  "command": "/bin/x86_64-linux-gnu-g++-11  -I/home/akua21/University/Rendering/RenderingIntroduction/render02562 -I/home/akua21/University/Rendering/RenderingIntroduction/render02562/SOIL -I/home/akua21/University/Rendering/RenderingIntroduction/render02562/3rdparty/include  -Wall -g -o CMakeFiles/raytrace.dir/raytrace/TriMesh.cpp.o -c /home/akua21/University/Rendering/RenderingIntroduction/render02562/raytrace/TriMesh.cpp",
+  "file": "/home/akua21/University/Rendering/RenderingIntroduction/render02562/raytrace/TriMesh.cpp"
+},
+{
+  "directory": "/home/akua21/University/Rendering/RenderingIntroduction/render02562/build",
+  "command": "/bin/x86_64-linux-gnu-g++-11  -I/home/akua21/University/Rendering/RenderingIntroduction/render02562 -I/home/akua21/University/Rendering/RenderingIntroduction/render02562/SOIL -I/home/akua21/University/Rendering/RenderingIntroduction/render02562/3rdparty/include  -Wall -g -o CMakeFiles/raytrace.dir/raytrace/Triangle.cpp.o -c /home/akua21/University/Rendering/RenderingIntroduction/render02562/raytrace/Triangle.cpp",
+  "file": "/home/akua21/University/Rendering/RenderingIntroduction/render02562/raytrace/Triangle.cpp"
+},
+{
+  "directory": "/home/akua21/University/Rendering/RenderingIntroduction/render02562/build",
+  "command": "/bin/x86_64-linux-gnu-g++-11  -I/home/akua21/University/Rendering/RenderingIntroduction/render02562 -I/home/akua21/University/Rendering/RenderingIntroduction/render02562/SOIL -I/home/akua21/University/Rendering/RenderingIntroduction/render02562/3rdparty/include  -Wall -g -o CMakeFiles/raytrace.dir/raytrace/Volume.cpp.o -c /home/akua21/University/Rendering/RenderingIntroduction/render02562/raytrace/Volume.cpp",
+  "file": "/home/akua21/University/Rendering/RenderingIntroduction/render02562/raytrace/Volume.cpp"
+},
+{
+  "directory": "/home/akua21/University/Rendering/RenderingIntroduction/render02562/build",
+  "command": "/bin/x86_64-linux-gnu-g++-11  -I/home/akua21/University/Rendering/RenderingIntroduction/render02562 -I/home/akua21/University/Rendering/RenderingIntroduction/render02562/SOIL -I/home/akua21/University/Rendering/RenderingIntroduction/render02562/3rdparty/include  -Wall -g -o CMakeFiles/raytrace.dir/raytrace/obj_load.cpp.o -c /home/akua21/University/Rendering/RenderingIntroduction/render02562/raytrace/obj_load.cpp",
+  "file": "/home/akua21/University/Rendering/RenderingIntroduction/render02562/raytrace/obj_load.cpp"
+},
+{
+  "directory": "/home/akua21/University/Rendering/RenderingIntroduction/render02562/build",
+  "command": "/bin/x86_64-linux-gnu-g++-11  -I/home/akua21/University/Rendering/RenderingIntroduction/render02562 -I/home/akua21/University/Rendering/RenderingIntroduction/render02562/SOIL -I/home/akua21/University/Rendering/RenderingIntroduction/render02562/3rdparty/include  -Wall -g -o CMakeFiles/raytrace.dir/raytrace/raytrace.cpp.o -c /home/akua21/University/Rendering/RenderingIntroduction/render02562/raytrace/raytrace.cpp",
+  "file": "/home/akua21/University/Rendering/RenderingIntroduction/render02562/raytrace/raytrace.cpp"
+},
+{
+  "directory": "/home/akua21/University/Rendering/RenderingIntroduction/render02562/build",
+  "command": "/bin/x86_64-linux-gnu-g++-11  -I/home/akua21/University/Rendering/RenderingIntroduction/render02562 -I/home/akua21/University/Rendering/RenderingIntroduction/render02562/SOIL -I/home/akua21/University/Rendering/RenderingIntroduction/render02562/3rdparty/include  -Wall -g -o CMakeFiles/raytrace.dir/raytrace/string_utils.cpp.o -c /home/akua21/University/Rendering/RenderingIntroduction/render02562/raytrace/string_utils.cpp",
+  "file": "/home/akua21/University/Rendering/RenderingIntroduction/render02562/raytrace/string_utils.cpp"
+},
+{
+  "directory": "/home/akua21/University/Rendering/RenderingIntroduction/render02562/build",
+  "command": "/bin/x86_64-linux-gnu-gcc-11  -I/home/akua21/University/Rendering/RenderingIntroduction/render02562 -I/home/akua21/University/Rendering/RenderingIntroduction/render02562/SOIL -I/home/akua21/University/Rendering/RenderingIntroduction/render02562/3rdparty/include -g -o CMakeFiles/SOIL.dir/SOIL/SOIL.c.o -c /home/akua21/University/Rendering/RenderingIntroduction/render02562/SOIL/SOIL.c",
+  "file": "/home/akua21/University/Rendering/RenderingIntroduction/render02562/SOIL/SOIL.c"
+},
+{
+  "directory": "/home/akua21/University/Rendering/RenderingIntroduction/render02562/build",
+  "command": "/bin/x86_64-linux-gnu-gcc-11  -I/home/akua21/University/Rendering/RenderingIntroduction/render02562 -I/home/akua21/University/Rendering/RenderingIntroduction/render02562/SOIL -I/home/akua21/University/Rendering/RenderingIntroduction/render02562/3rdparty/include -g -o CMakeFiles/SOIL.dir/SOIL/image_DXT.c.o -c /home/akua21/University/Rendering/RenderingIntroduction/render02562/SOIL/image_DXT.c",
+  "file": "/home/akua21/University/Rendering/RenderingIntroduction/render02562/SOIL/image_DXT.c"
+},
+{
+  "directory": "/home/akua21/University/Rendering/RenderingIntroduction/render02562/build",
+  "command": "/bin/x86_64-linux-gnu-gcc-11  -I/home/akua21/University/Rendering/RenderingIntroduction/render02562 -I/home/akua21/University/Rendering/RenderingIntroduction/render02562/SOIL -I/home/akua21/University/Rendering/RenderingIntroduction/render02562/3rdparty/include -g -o CMakeFiles/SOIL.dir/SOIL/image_helper.c.o -c /home/akua21/University/Rendering/RenderingIntroduction/render02562/SOIL/image_helper.c",
+  "file": "/home/akua21/University/Rendering/RenderingIntroduction/render02562/SOIL/image_helper.c"
+},
+{
+  "directory": "/home/akua21/University/Rendering/RenderingIntroduction/render02562/build",
+  "command": "/bin/x86_64-linux-gnu-gcc-11  -I/home/akua21/University/Rendering/RenderingIntroduction/render02562 -I/home/akua21/University/Rendering/RenderingIntroduction/render02562/SOIL -I/home/akua21/University/Rendering/RenderingIntroduction/render02562/3rdparty/include -g -o CMakeFiles/SOIL.dir/SOIL/stb_image.c.o -c /home/akua21/University/Rendering/RenderingIntroduction/render02562/SOIL/stb_image.c",
+  "file": "/home/akua21/University/Rendering/RenderingIntroduction/render02562/SOIL/stb_image.c"
+},
+{
+  "directory": "/home/akua21/University/Rendering/RenderingIntroduction/render02562/build",
+  "command": "/bin/x86_64-linux-gnu-gcc-11  -I/home/akua21/University/Rendering/RenderingIntroduction/render02562 -I/home/akua21/University/Rendering/RenderingIntroduction/render02562/SOIL -I/home/akua21/University/Rendering/RenderingIntroduction/render02562/3rdparty/include -g -o CMakeFiles/SOIL.dir/SOIL/stb_image_write.c.o -c /home/akua21/University/Rendering/RenderingIntroduction/render02562/SOIL/stb_image_write.c",
+  "file": "/home/akua21/University/Rendering/RenderingIntroduction/render02562/SOIL/stb_image_write.c"
+}
+]

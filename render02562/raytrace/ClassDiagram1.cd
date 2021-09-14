@@ -1,0 +1,347 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Camera">
+    <Position X="4.5" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>CQAGAAIAAACAAGAAAAQwAAAAAAAAAABBAAAAAiICgAA=</HashCode>
+      <FileName>Camera.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Scene">
+    <Position X="2.5" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAJdACUAEAAAAAEhgIAYQAgwQIACsJDACKABAQoAAA=</HashCode>
+      <FileName>Scene.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ParticleTracer" Collapsed="true">
+    <Position X="6.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>hAgAAAAAAAAAACAAIAAAAAAAAIACAAAAAAAAAAAAAAE=</HashCode>
+      <FileName>ParticleTracer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RayCaster" Collapsed="true">
+    <Position X="6.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ASAQAAgAAEAQQAAAAAAAACEAAACgAAAAAAAAAAAQIAE=</HashCode>
+      <FileName>RayCaster.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RayTracer" Collapsed="true">
+    <Position X="6.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAQAAAkAAAAAgAACAAAAAABAAAAAA=</HashCode>
+      <FileName>RayTracer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tracer" Collapsed="true">
+    <Position X="6.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAAAQAQAQgAAAIAAQAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Tracer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Emission" Collapsed="true">
+    <Position X="20.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABEAAAAA=</HashCode>
+      <FileName>Emission.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Glossy" Collapsed="true">
+    <Position X="21.5" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAgAAA=</HashCode>
+      <FileName>Glossy.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GlossyVolume" Collapsed="true">
+    <Position X="21.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>GlossyVolume.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lambertian" Collapsed="true">
+    <Position X="20.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAIAAAACAAAAAEAAAAA=</HashCode>
+      <FileName>Lambertian.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mirror" Collapsed="true">
+    <Position X="23.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAkAAAACAAAAAgAEAAAAA=</HashCode>
+      <FileName>Mirror.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Phong" Collapsed="true">
+    <Position X="19.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAIAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAEAAAAA=</HashCode>
+      <FileName>Phong.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotonCaustics" Collapsed="true">
+    <Position X="21.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAABVAAAAA=</HashCode>
+      <FileName>PhotonCaustics.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Reflectance" Collapsed="true">
+    <Position X="20.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>Reflectance.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Shader" Collapsed="true">
+    <Position X="21.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>Shader.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Textured" Collapsed="true">
+    <Position X="20.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACAAAAAAAAAAAAAQACBAAAAABAAAAAA=</HashCode>
+      <FileName>Textured.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Transparent" Collapsed="true">
+    <Position X="23.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>Transparent.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Volume" Collapsed="true">
+    <Position X="23.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAEAAAAA=</HashCode>
+      <FileName>Volume.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AreaLight" Collapsed="true">
+    <Position X="15.25" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAAAAAAABQAAAAAAABAIAAAA=</HashCode>
+      <FileName>AreaLight.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Directional" Collapsed="true">
+    <Position X="13" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAACAAAAAAIAAAAAAAAAAAAQAAEAAAAAAAAAAA=</HashCode>
+      <FileName>Directional.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Light" Collapsed="true">
+    <Position X="13" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAEAAIAgAAECAAQAAAAAIAAAAAIAA=</HashCode>
+      <FileName>Light.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PointLight" Collapsed="true">
+    <Position X="10.75" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAAAAAEAAAAAAAAAAASAAAAAAAIAAAAAA=</HashCode>
+      <FileName>PointLight.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RenderEngine">
+    <Position X="0.5" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>wAARFBBfQFMQQAAMOALCRoMEkAEKAEAEACIQAyBWJBA=</HashCode>
+      <FileName>RenderEngine.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Timer" Collapsed="true">
+    <Position X="13" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgAAAACAAAABAgAAAAAAgAAAAEAAA=</HashCode>
+      <FileName>Timer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FrameRateTimer" Collapsed="true">
+    <Position X="13" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAIAAAAAAAAAAAAAAAAAABAAAAAgEAI=</HashCode>
+      <FileName>Timer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Randomizer" Collapsed="true">
+    <Position X="16.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAQAAgAAAIAAAAAAAAEAAAAAAAAAAIACAAABBIAAAA=</HashCode>
+      <FileName>Randomizer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Object3D" Collapsed="true">
+    <Position X="13" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACEAAAAAAAAAAAKAAAAAAABAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Object3D.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Plane" Collapsed="true">
+    <Position X="9.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAkAEAAAAAAAAAAAAAIAAgBAQEAAAEAEJAAABAAAA=</HashCode>
+      <FileName>Plane.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sphere" Collapsed="true">
+    <Position X="12" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIgCEAAACAAAAAAAAAQQAAAgBAAEAAAAAAAAAABAAAA=</HashCode>
+      <FileName>Sphere.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Triangle" Collapsed="true">
+    <Position X="14.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAAAABAAAAAAAgBhQEIAAAAAoABABAAAA=</HashCode>
+      <FileName>Triangle.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Accelerator" Collapsed="true">
+    <Position X="8.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAQAQAAIAAAAAgJAAAAAIAAIAAA=</HashCode>
+      <FileName>Accelerator.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BspTree" Collapsed="true">
+    <Position X="8.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QEAAAAAAAAAAAAAABAAgRAAEAEAAEAIAAAAAIAAIABA=</HashCode>
+      <FileName>BspTree.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IndexedFaceSet" Collapsed="true">
+    <Position X="15" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAQQAAAIAAAAAAAQgAAAEAAAQAAAAAAAAgAEEAAAA=</HashCode>
+      <FileName>IndexedFaceSet.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriMeshObjLoader" Collapsed="true">
+    <Position X="15" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAACAAQAIAgAAAABAAAIAEAAAAAAAAA=</HashCode>
+      <FileName>obj_load.cpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TriMesh" Collapsed="true">
+    <Position X="16.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAEAAAAWAAABAgKAAAAAAABEAEIgAAAAAAAABIAEA=</HashCode>
+      <FileName>TriMesh.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gamma" Collapsed="true">
+    <Position X="13" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAACAAAAAAAABAAAAQAAAAAQAAAAABAAA=</HashCode>
+      <FileName>Gamma.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ToneMap" Collapsed="true">
+    <Position X="13" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>ToneMap.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotonMap&lt;T&gt;" Collapsed="true">
+    <Position X="16.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAACABIAAAIIACBQYkAEAIAAAAAEABAAAAAHAIAiA=</HashCode>
+      <FileName>PhotonMap.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HDRTexture" Collapsed="true">
+    <Position X="11" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAQAAAAAAAAAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>HDRTexture.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InvSphereMap" Collapsed="true">
+    <Position X="11" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>InvSphereMap.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SphereTexture" Collapsed="true">
+    <Position X="11" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAAAAAAAAIAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SphereTexture.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Texture" Collapsed="true">
+    <Position X="11" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAACAIAAgUQIQAAAAAAIAACAAgAgIAIQAAIAIAA=</HashCode>
+      <FileName>Texture.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="HitInfo">
+    <Position X="6.5" Y="5.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAEAAAAAAAIAAAIECgAgAAAAAAIABAAAA=</HashCode>
+      <FileName>HitInfo.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="AccObj">
+    <Position X="8.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAEAAABAAAAAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>AccObj.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="BspNode" Collapsed="true">
+    <Position X="15" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAACABAIAAAAAAAAIAgAAAAAAAAAAggA=</HashCode>
+      <FileName>BspTree.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="ObjMaterial">
+    <Position X="4.5" Y="5.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>QACBAAAAAAAAAAAEAAAASAIAAAAkQAggAAAAAABAAAA=</HashCode>
+      <FileName>ObjMaterial.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Photon" Collapsed="true">
+    <Position X="16.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAACAAAAAAAAAIAAAAEAAkAAAAAAAAAAAAA=</HashCode>
+      <FileName>PhotonMap.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="NearestPhotons&lt;T&gt;" Collapsed="true">
+    <Position X="16.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAIAAAAAAAAIAEAAAAACAAAAAAAAABAAA=</HashCode>
+      <FileName>PhotonMap.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Enum Name="BspNodeType" Collapsed="true">
+    <Position X="15" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAAAQAAAAAAAAAAAAAAAAAAAAAACAAACA=</HashCode>
+      <FileName>BspTree.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

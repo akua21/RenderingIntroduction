@@ -1,0 +1,9 @@
+#ifndef CONFIGURATIOM_H
+#define CONFIGURATIOM_H
+
+#include <string>
+
+std::string const models_path = "@PROJECT_SOURCE_DIR@/models/";
+
+//CONFIGURATIOM_H
+#endif

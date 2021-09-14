@@ -1,0 +1,4 @@
+/home/akua21/University/Rendering/RenderingIntroduction/render02562/build/CMakeFiles/rebuild_cache.dir
+/home/akua21/University/Rendering/RenderingIntroduction/render02562/build/CMakeFiles/edit_cache.dir
+/home/akua21/University/Rendering/RenderingIntroduction/render02562/build/CMakeFiles/raytrace.dir
+/home/akua21/University/Rendering/RenderingIntroduction/render02562/build/CMakeFiles/SOIL.dir
