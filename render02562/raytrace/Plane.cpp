@@ -12,11 +12,14 @@ bool Plane::intersect(const Ray& r, HitInfo& hit, unsigned int prim_idx) const
 {
 	float t = -(dot(r.origin, onb.m_normal) + d) / dot(r.direction, onb.m_normal);
 
-	if (t > 0)
+	if (r.tmin < t && t < r.tmax)
 	{
 		hit.has_hit = true;
 		hit.dist = t;
 		hit.material = &material;
+    hit.geometric_normal = onb.m_normal;
+    hit.shading_normal = onb.m_normal;
+    hit.position = r.origin + r.direction * t;
 		return true;
 	}
 

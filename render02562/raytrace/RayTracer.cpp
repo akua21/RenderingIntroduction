@@ -12,6 +12,20 @@ using namespace optix;
 
 bool RayTracer::trace_reflected(const Ray& in, const HitInfo& in_hit, Ray& out, HitInfo& out_hit) const
 {
+  
+  float3 r = reflect(in.direction, in_hit.shading_normal);
+  out = Ray(in_hit.position, r, 0, 0.01f);
+
+
+  bool does_hit = trace_to_closest(out, out_hit);
+
+  if (does_hit)
+  {
+    out_hit.ray_ior = in_hit.ray_ior;
+    out_hit.trace_depth = in_hit.trace_depth + 1;
+    return true;
+  }
+    
   // Initialize the reflected ray and trace it.
   //
   // Input:  in         (the ray to be reflected)

@@ -15,6 +15,8 @@ using namespace optix;
 
 float3 Glossy::shade(const Ray& r, HitInfo& hit, bool emit) const
 {
+
+
   // Implement glossy reflection here.
   //
   // Input:  r          (the ray that hit the material)
@@ -31,8 +33,8 @@ float3 Glossy::shade(const Ray& r, HitInfo& hit, bool emit) const
   // Hint: Use the function shade_new_ray(...) to pass a newly traced ray to
   //       the shader for the surface it hit.
 
-  //return Mirror::shade(r, hit, emit);
+  return Mirror::shade(r, hit, emit);
   //return Transparent::shade(r, hit, emit);
 
-  return Phong::shade(r, hit, emit);
+  //return Phong::shade(r, hit, emit);
 }

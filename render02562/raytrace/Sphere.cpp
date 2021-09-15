@@ -18,11 +18,14 @@ bool Sphere::intersect(const Ray& r, HitInfo& hit, unsigned int prim_idx) const
   float t1 = -b / 2 - sqrt((b / 2)*(b / 2) - c);
   float t2 = -b / 2 + sqrt((b / 2)*(b / 2) - c);
 
-	if (result >= 0.0f)
+	if (r.tmin < t1 && t1 < r.tmax)
 	{
 		hit.has_hit = true;
-		hit.dist = min(t1, t2);
+		hit.dist = t1;
 		hit.material = &material;
+    hit.geometric_normal = ((r.origin + hit.dist * r.direction) - center) / radius;
+    hit.shading_normal = ((r.origin + hit.dist * r.direction) - center) / radius;
+    hit.position = (r.origin + t1*r.direction);
 		return true;
 	}
 

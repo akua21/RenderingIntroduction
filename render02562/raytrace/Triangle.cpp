@@ -52,6 +52,9 @@ bool Triangle::intersect(const Ray& r, HitInfo& hit, unsigned int prim_idx) cons
     hit.has_hit = true;
 		hit.dist = t;
 		hit.material = &material;
+    hit.geometric_normal = normalize(n);
+    hit.shading_normal = normalize(n);
+    hit.position = r.origin + r.direction*t;
     return true;
   }
   

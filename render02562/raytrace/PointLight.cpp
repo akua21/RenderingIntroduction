@@ -12,21 +12,27 @@ using namespace optix;
 bool PointLight::sample(const float3& pos, float3& dir, float3& L) const
 {
 
-  if (shadows == 'off')
+  if (shadows)
   {
     dir = normalize(light_pos - pos);
-    L = intensity / pow(length(light_pos - pos), 2);
 
-    return true;
+    HitInfo hit;
+    Ray ray = Ray(pos, dir, 0, 0.01f);
+
+    tracer->trace_to_any(ray, hit);
+
+    if (hit.has_hit)
+    {
+      return false;
+    }
+    L = intensity / pow(length(light_pos - pos), 2);
   }
   else 
   {
-    float3 shadow_dir;
-    Ray shadow_ray = Ray(pos, shadow_dir, 0, 0);
-
-
-    return false;
+    L = intensity / pow(length(light_pos - pos), 2);
+    //L = intensity / dot(light_pos - pos, light_pos - pos);
   }
+  return true;
   
   
   
