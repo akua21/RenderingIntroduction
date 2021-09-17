@@ -17,24 +17,23 @@ bool PointLight::sample(const float3& pos, float3& dir, float3& L) const
     dir = normalize(light_pos - pos);
 
     HitInfo hit;
-    Ray ray = Ray(pos, dir, 0, 0.01f);
+    Ray shadow_ray = Ray(pos, dir, 0, 0.01f);
 
-    tracer->trace_to_any(ray, hit);
+    tracer->trace_to_any(shadow_ray, hit);
 
     if (hit.has_hit)
     {
       return false;
     }
+    
     L = intensity / pow(length(light_pos - pos), 2);
   }
   else 
   {
     L = intensity / pow(length(light_pos - pos), 2);
-    //L = intensity / dot(light_pos - pos, light_pos - pos);
   }
+
   return true;
-  
-  
   
 
   // Compute output and return value given the following information.

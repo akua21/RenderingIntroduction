@@ -18,6 +18,23 @@ float3 Phong::shade(const Ray& r, HitInfo& hit, bool emit) const
   float3 rho_s = get_specular(hit);
   float s = get_shininess(hit);
 
+  float3 result = make_float3(0.0f);
+  
+
+  for (unsigned int i = 0; i < lights.size(); i++)
+  {
+    float3 L_i;
+    float3 dir;
+
+    if (lights[i]->sample(hit.position, dir, L_i))
+    {
+      float3 dir_reflected = reflect(r.direction, hit.shading_normal);
+
+      result += ((rho_d * M_1_PIf) + rho_s * ((s + 2)/2)*M_1_PIf * pow((dot(-r.direction, dir_reflected)), s) * L_i * dot(dir, hit.shading_normal));      
+    }
+
+  }
+
   // Implement Phong reflection here.
   //
   // Input:  r          (the ray that hit the material)
@@ -36,5 +53,6 @@ float3 Phong::shade(const Ray& r, HitInfo& hit, bool emit) const
   //
   // Hint: Call the sample function associated with each light in the scene.
 
-  return Lambertian::shade(r, hit, emit);
+  //return Lambertian::shade(r, hit, emit);
+  return result;
 }

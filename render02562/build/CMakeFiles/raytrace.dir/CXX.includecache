@@ -286,6 +286,14 @@ optix_world.h
 HitInfo.h
 /home/akua21/University/Rendering/RenderingIntroduction/render02562/raytrace/HitInfo.h
 
+/home/akua21/University/Rendering/RenderingIntroduction/render02562/raytrace/Phong.cpp
+optix_world.h
+-
+HitInfo.h
+/home/akua21/University/Rendering/RenderingIntroduction/render02562/raytrace/HitInfo.h
+Phong.h
+/home/akua21/University/Rendering/RenderingIntroduction/render02562/raytrace/Phong.h
+
 /home/akua21/University/Rendering/RenderingIntroduction/render02562/raytrace/Phong.h
 vector
 -
