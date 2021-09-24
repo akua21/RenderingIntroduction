@@ -18,5 +18,6 @@ float3 Transparent::shade(const Ray& r, HitInfo& hit, bool emit) const
   HitInfo hit_reflected, hit_refracted;
   tracer->trace_reflected(r, hit, reflected, hit_reflected);
   tracer->trace_refracted(r, hit, refracted, hit_refracted, R);
+  
   return R*shade_new_ray(reflected, hit_reflected) + (1.0f - R)*shade_new_ray(refracted, hit_refracted);
 }
