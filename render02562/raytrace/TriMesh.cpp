@@ -22,6 +22,38 @@ bool TriMesh::intersect(const Ray& r, HitInfo& hit, unsigned int prim_idx) const
 {
   const uint3& face = geometry.face(prim_idx);
 
+  float3 n;
+  float t;
+  float betta;
+  float gamma;
+
+  bool doesHit = optix::intersect_triangle(r, geometry.vertex(face.x), geometry.vertex(face.y), geometry.vertex(face.z), n, t, betta, gamma);
+
+  if (doesHit){
+    hit.has_hit = true;
+    hit.dist = t;
+    hit.position = r.origin + r.direction * t;
+    hit.material = &(materials[mat_idx[prim_idx]]);
+    hit.geometric_normal = n;
+
+    if (has_normals()){
+      float3 n1 = normals.vertex(face.x);
+      float3 n2 = normals.vertex(face.y);
+      float3 n3 = normals.vertex(face.z);
+
+      float alpha = 1 - betta - gamma;
+      
+      hit.shading_normal = normalize(alpha*n1 + betta*n2 + gamma*n3);
+      //hit.shading_normal = normalize(n);
+    }
+    else{
+      hit.shading_normal = normalize(n);
+    }
+    
+    return true;
+  }
+  
+
   // Implement ray-triangle intersection here.
   //
   // Input:  r                    (the ray to be checked for intersection)

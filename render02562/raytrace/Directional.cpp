@@ -28,6 +28,23 @@ bool Directional::sample(const float3& pos, float3& dir, float3& L) const
   // light_dir  (direction of the emitted light)
   // emission   (radiance of the emitted light)
 
+  
+ 
+  if (shadows){
+    Ray ray = Ray(pos, -light_dir, 0, 0.01f);
+    HitInfo hit = HitInfo();
+    bool did_hit = tracer->trace_to_closest(ray, hit);
+    if (did_hit){
+      L = make_float3(0.0f);
+      return false;
+    }
+    else{
+      L = emission;
+      dir = -light_dir;
+      return true;
+    }
+  }
+   
   return false;
 }
 

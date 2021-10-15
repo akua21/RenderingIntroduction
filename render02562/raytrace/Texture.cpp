@@ -64,14 +64,14 @@ float4 Texture::sample_nearest(const float3& texcoord) const
   // return make_float4(0.0f);
 
   float s = texcoord.x - floor(texcoord.x);
-  float t = texcoord.y - floor(texcoord.y);
+  float t = 1.0f - (texcoord.y - floor(texcoord.y));
 
   float a = s * width;
   float b = t * height;
 
   int U = int(fmodf((a + 0.5), width)); 
   int V = int(fmodf((b + 0.5), height));
-  int i = U + (V)*width; // (height-V) ¿?
+  int i = U + (V)*width; 
 
   return fdata[i];
 }
@@ -98,30 +98,30 @@ float4 Texture::sample_linear(const float3& texcoord) const
   // Hint: Use three lerp operations (or one bilerp) to perform the
   //       bilinear interpolation.
 
-  return sample_nearest(texcoord);
+  // return sample_nearest(texcoord);
 
-  // float s = texcoord.x - floor(texcoord.x);
-  // float t = texcoord.y - floor(texcoord.y);
+  float s = texcoord.x - floor(texcoord.x);
+  float t = 1.0f - (texcoord.y - floor(texcoord.y));
 
-  // float a = s * width;
-  // float b = t * height;
+  float a = s * width;
+  float b = t * height;
 
-  // int U = int(a); 
-  // int V = int(b);
+  int U = int(a) % width; 
+  int V = int(b) % height;
 
-  // int c1 = a - U;
-  // int c2 = b - V;
+  float c1 = a - U;
+  float c2 = b - V;
 
 
-  // int Up1 = (U + 1) % width;
-  // int Vp1 = (V + 1) % height;
+  int Up1 = (U + 1) % width;
+  int Vp1 = (V + 1) % height;
 
-  // int i00 = U + width*V;
-  // int i10 = Up1 + width*V;
-  // int i01 = U + Vp1*width;
-  // int i11 = Up1 + Vp1*width;
+  int i00 = U + width*V;
+  int i10 = Up1 + width*V;
+  int i01 = U + Vp1*width;
+  int i11 = Up1 + Vp1*width;
 
-  // return bilerp(fdata[i00], fdata[i10], fdata[i01], fdata[i11], c1, c2);
+  return bilerp(fdata[i00], fdata[i10], fdata[i01], fdata[i11], c1, c2);
 }
 
 float4 Texture::look_up(unsigned int idx) const

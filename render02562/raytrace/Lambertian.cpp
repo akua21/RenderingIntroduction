@@ -15,22 +15,6 @@ using namespace optix;
 
 float3 Lambertian::shade(const Ray& r, HitInfo& hit, bool emit) const
 {
-  float3 rho_d = get_diffuse(hit);
-  float3 result = make_float3(0.0f);
-
-
-  for (unsigned int i = 0; i < lights.size(); i++)
-  {
-    float3 L_i;
-    float3 dir;
-
-    if (lights[i]->sample(hit.position, dir, L_i))
-    {
-      result += (rho_d * M_1_PIf) * L_i * dot(hit.shading_normal, dir);
-    }
-  }
-
-  
   // Implement Lambertian reflection here.
   //
   // Input:  r          (the ray that hit the material)
@@ -46,6 +30,21 @@ float3 Lambertian::shade(const Ray& r, HitInfo& hit, bool emit) const
   // rho_d              (difuse reflectance of the material)
   //
   // Hint: Call the sample function associated with each light in the scene.
+  
+  float3 rho_d = get_diffuse(hit);
+  float3 result = make_float3(0.0f);
+
+
+  for (unsigned int i = 0; i < lights.size(); i++)
+  {
+    float3 L_i;
+    float3 dir;
+
+    if (lights[i]->sample(hit.position, dir, L_i))
+    {
+      result += (rho_d * M_1_PIf) * L_i * fmaxf(0.0, dot(hit.shading_normal, dir));
+    }
+  }
 
   return result + Emission::shade(r, hit, emit);
 }
