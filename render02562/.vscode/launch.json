@@ -9,7 +9,7 @@
             "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/bin/raytraced",
-            // "args": ["${workspaceFolder}/models/teapot.obj"],
+            "args": ["${workspaceFolder}/models/CornellBox.obj", "${workspaceFolder}/models/CornellBlocks.obj"],
             "stopAtEntry": false,
             "cwd": "${fileDirname}",
             "environment": [],

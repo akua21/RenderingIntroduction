@@ -61,7 +61,19 @@ inline optix::float3 sample_cosine_weighted(const optix::float3& normal)
   // Calculate new direction as if the z-axis were the normal
 
   // Rotate from z-axis to actual normal and return
-  return optix::make_float3(0.0f);
+
+  double e1 = mt_random_half_open();
+  double e2 = mt_random_half_open();
+
+  double theta = acos(sqrt(1-e1));
+  double phi = 2 * M_PI * e2;
+
+  optix::float3 v = optix::make_float3(cos(phi)*sin(theta), sin(phi)*sin(theta), cos(theta));
+
+  rotate_to_normal(normal, v);
+
+  return v;
+  //return optix::make_float3(0.0f);
 }
 
 inline optix::float3 sample_Phong_distribution(const optix::float3& normal, const optix::float3& dir, float shininess)

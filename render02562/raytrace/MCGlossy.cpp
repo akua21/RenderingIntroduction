@@ -38,5 +38,21 @@ float3 MCGlossy::shade(const Ray& r, HitInfo& hit, bool emit) const
   // Hint: Use the function shade_new_ray(...) to pass a newly traced ray to
   //       the shader for the surface it hit.
 
+
+  optix::float3 v;
+  unsigned N = 50;
+  float3 Li = make_float3(0.0f, 0.0f, 0.0f);
+  Ray ray;
+
+  for (unsigned i = 0; i < N; i++) {
+    v = sample_cosine_weighted(hit.shading_normal);
+    ray = Ray(hit.position, v, 0, 0.01f);
+    HitInfo hit_ray = HitInfo();
+
+    Li += shade_new_ray(ray, hit_ray, emit);
+  }
+  
+  result = rho_d * Li/N;
+
   return result + Phong::shade(r, hit, emit);
 }
