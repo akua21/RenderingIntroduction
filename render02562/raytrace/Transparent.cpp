@@ -13,7 +13,7 @@ float3 Transparent::shade(const Ray& r, HitInfo& hit, bool emit) const
   if(hit.trace_depth >= max_depth)
     return make_float3(0.0f);
 
-  float R;
+  float R = 0.1f;
   Ray reflected, refracted;
   HitInfo hit_reflected, hit_refracted;
   tracer->trace_reflected(r, hit, reflected, hit_reflected);

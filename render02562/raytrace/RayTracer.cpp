@@ -122,6 +122,16 @@ bool RayTracer::trace_refracted(const Ray& in, const HitInfo& in_hit, Ray& out, 
   //        (b) Set out_hit.ray_ior and out_hit.trace_depth.
   //        (c) Remember that the function must handle total internal reflection.
   R = 0.1;
+
+  float3 r;
+  float3 normal;
+
+  float ior = get_ior_out(in, in_hit, normal);
+  bool total_internal_reflection = refract(r, in.direction, normal, ior/in_hit.ray_ior);
+  if (!total_internal_reflection){
+    R = 1.0;
+  } 
+
   return trace_refracted(in, in_hit, out, out_hit);
 }
 

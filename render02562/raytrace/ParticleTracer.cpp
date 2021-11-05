@@ -91,9 +91,13 @@ void ParticleTracer::trace_particle(const Light* light, const unsigned int caust
   Ray r;
   HitInfo hit;
 
+  optix::float3 Phi;
+  light->emit(r, hit, Phi);
+
   // Forward from all specular surfaces
   while(scene->is_specular(hit.material) && hit.trace_depth < 500)
-  {
+  { 
+
     switch(hit.material->illum)
     {
     case 3:  // mirror materials
@@ -106,12 +110,34 @@ void ParticleTracer::trace_particle(const Light* light, const unsigned int caust
     case 12: // absorbing glossy volume
       {
         // Handle absorption here (Worksheet 8)
+        optix::float3 t = get_transmittance(hit);
+        float inside = dot(r.direction, hit.shading_normal) > 0.0f;
+        if (inside){
+          Phi *= expf(-t*hit.dist);
+        }
       }
     case 2:  // glossy materials
     case 4:  // transparent materials
       {
         // Forward from transparent surfaces here
-        return;
+        Ray r_out;
+        HitInfo h_out;
+        float R;
+
+        bool trace = trace_refracted(r, hit, r_out, h_out, R);
+
+        if (mt_random_half_open() < R){
+          h_out.has_hit = false;
+          trace = trace_reflected(r, hit, r_out, h_out);
+        }
+
+        if (!trace){
+          return;
+        }
+        else{
+          r = r_out;
+          hit = h_out;
+        }
       }
       break;
     default: 
@@ -120,6 +146,8 @@ void ParticleTracer::trace_particle(const Light* light, const unsigned int caust
   }
 
   // Store in caustics map at first diffuse surface
+  caustics.store(Phi, hit.position, -r.direction);
+
   // Hint: When storing, the convention is that the photon direction
   //       should point back toward where the photon came from.
 }
@@ -139,6 +167,8 @@ float3 ParticleTracer::get_transmittance(const HitInfo& hit) const
     // this material property as an absorption coefficient. Since absorption has an effect
     // opposite that of reflection, using 1/rho_d-1 makes it more intuitive for the user.
     float3 rho_d = make_float3(hit.material->diffuse[0], hit.material->diffuse[1], hit.material->diffuse[2]);
+    
+    return 1.0f/fmaxf(rho_d, make_float3(0.0001f)) - 1.0f ;
   }
   return make_float3(1.0f);
 }

@@ -40,16 +40,20 @@ float3 MCGlossy::shade(const Ray& r, HitInfo& hit, bool emit) const
 
 
   optix::float3 v;
-  unsigned N = 50;
+  unsigned N = 1;
   float3 Li = make_float3(0.0f, 0.0f, 0.0f);
   Ray ray;
+  float pdf = (rho_d.x + rho_d.y + rho_d.z)/3.0f;
 
   for (unsigned i = 0; i < N; i++) {
-    v = sample_cosine_weighted(hit.shading_normal);
-    ray = Ray(hit.position, v, 0, 0.01f);
-    HitInfo hit_ray = HitInfo();
+    if (mt_random_half_open() < pdf) {
+      v = sample_cosine_weighted(hit.shading_normal);
+      ray = Ray(hit.position, v, 0, 0.01f);
+      HitInfo hit_ray = HitInfo();
+      tracer->trace_to_closest(ray, hit_ray);
 
-    Li += shade_new_ray(ray, hit_ray, emit);
+      Li += shade_new_ray(ray, hit_ray, false) / pdf;
+    }
   }
   
   result = rho_d * Li/N;

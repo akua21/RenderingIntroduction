@@ -28,6 +28,16 @@ bool Sphere::intersect(const Ray& r, HitInfo& hit, unsigned int prim_idx) const
     hit.position = (r.origin + t1*r.direction);
 		return true;
 	}
+  else if (r.tmin < t2 && t2 < r.tmax)
+  {
+    hit.has_hit = true;
+		hit.dist = t2;
+		hit.material = &material;
+    hit.geometric_normal = ((r.origin + hit.dist * r.direction) - center) / radius;
+    hit.shading_normal = ((r.origin + hit.dist * r.direction) - center) / radius;
+    hit.position = (r.origin + t2*r.direction);
+    return true;  
+  }
 
   // Implement ray-sphere intersection here.
   //

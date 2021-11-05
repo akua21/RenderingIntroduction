@@ -25,6 +25,7 @@ float3 Volume::get_transmittance(const HitInfo& hit) const
     // this material property as an absorption coefficient. Since absorption has an effect
     // opposite that of reflection, using 1/rho_d-1 makes it more intuitive for the user.
     float3 rho_d = make_float3(hit.material->diffuse[0], hit.material->diffuse[1], hit.material->diffuse[2]);
+    return 1/rho_d - 1.0f;
   }
   return make_float3(1.0f);
 }

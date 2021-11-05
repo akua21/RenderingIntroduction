@@ -48,7 +48,7 @@ float3 Phong::shade(const Ray& r, HitInfo& hit, bool emit) const
     {
       float3 dir_reflected = reflect(-dir, hit.shading_normal);
 
-      result += ((rho_d * M_1_PIf) + rho_s * ((s + 2)/2)*M_1_PIf * pow(fmaxf(0.0f, dot(-r.direction, dir_reflected)), s) * L_i * fmaxf(0.0f, dot(dir, hit.shading_normal)));      
+      result += ((rho_d * M_1_PIf) + rho_s * ((s + 2)/2)*M_1_PIf * pow(fmaxf(0.0f, dot(-r.direction, dir_reflected)), s)) * L_i * fmaxf(0.0f, dot(dir, hit.shading_normal));      
     }
 
   }
