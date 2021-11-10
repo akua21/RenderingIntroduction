@@ -278,6 +278,16 @@ optix_world.h
 ObjMaterial.h
 /home/akua21/University/Rendering/RenderingIntroduction/render02562/raytrace/ObjMaterial.h
 
+/home/akua21/University/Rendering/RenderingIntroduction/render02562/raytrace/Holdout.cpp
+optix_world.h
+-
+HitInfo.h
+/home/akua21/University/Rendering/RenderingIntroduction/render02562/raytrace/HitInfo.h
+sampler.h
+/home/akua21/University/Rendering/RenderingIntroduction/render02562/raytrace/sampler.h
+Holdout.h
+/home/akua21/University/Rendering/RenderingIntroduction/render02562/raytrace/Holdout.h
+
 /home/akua21/University/Rendering/RenderingIntroduction/render02562/raytrace/Holdout.h
 optix_world.h
 -
@@ -763,6 +773,14 @@ cmath
 -
 optix_world.h
 -
+
+/home/akua21/University/Rendering/RenderingIntroduction/render02562/raytrace/sampler.h
+cmath
+-
+optix_world.h
+-
+mt_random.h
+/home/akua21/University/Rendering/RenderingIntroduction/render02562/raytrace/mt_random.h
 
 /home/akua21/University/Rendering/RenderingIntroduction/render02562/raytrace/string_utils.h
 string

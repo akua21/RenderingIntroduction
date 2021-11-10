@@ -38,10 +38,50 @@ bool AreaLight::sample(const float3& pos, float3& dir, float3& L) const
   //        (b) Use the function get_emission(...) to get the radiance
   //        emitted by a triangle in the mesh.
 
-  
+  // Worksheet 4 ---
+  // float3 x = pos;
+  // float3 p = mesh->compute_bbox().center();
+  // dir = normalize(p - x);
+  // if (shadows){
+  //   Ray ray = Ray(x, dir, 0, 0.01f, sqrt(dot(p-x, p-x)) - 0.01f);
+  //   HitInfo hit = HitInfo();
+  //   bool did_hit = tracer->trace_to_closest(ray, hit);
+  //   if (did_hit){
+  //     L = make_float3(0.0f);
+  //     return false;
+  //   }
+  //   for (unsigned i = 0 ; i < mesh->geometry.no_faces(); i++){
+  //     float3 l_e = get_emission(i);
+  //     float a_e = mesh->face_areas[i];
+  //     float3 w_i = dir;
+  //     uint3 vert = normals.face(i);
+  //     float3 n_e = normalize(normals.vertex(vert.x) + normals.vertex(vert.y) + normals.vertex(vert.z));
+  //     L += dot(-w_i, n_e) * l_e * a_e;
+  //   }
+  //   L = L / dot(p-x, p-x);
+  //   return true;
+  // }
+  //---
+
+  // Worksheet 9 ---
+  double e1 = mt_random_half_open();
+  double e2 = mt_random_half_open();
+
+  float u = 1.0 - sqrt(e1);
+  float v = (1.0 - e2) * sqrt(e1);
+  float w = e2 * sqrt(e1);
+
+  int random_triangle = mt_random_half_open() * mesh->geometry.no_faces();
+  float3 l_e = get_emission(random_triangle);
+  float a_e = mesh->face_areas[random_triangle];
+  uint3 vert = normals.face(random_triangle);
+
+    
   float3 x = pos;
-  float3 p = mesh->compute_bbox().center();
+  float3 p = u * mesh->geometry.vertex(vert.x) + v * mesh->geometry.vertex(vert.y) + w * mesh->geometry.vertex(vert.z);
   dir = normalize(p - x);
+  float3 w_i = dir;
+
   if (shadows){
     Ray ray = Ray(x, dir, 0, 0.01f, sqrt(dot(p-x, p-x)) - 0.01f);
     HitInfo hit = HitInfo();
@@ -50,15 +90,11 @@ bool AreaLight::sample(const float3& pos, float3& dir, float3& L) const
       L = make_float3(0.0f);
       return false;
     }
-    for (unsigned i = 0 ; i < mesh->geometry.no_faces(); i++){
-      float3 l_e = get_emission(i);
-      float a_e = mesh->face_areas[i];
-      float3 w_i = dir;
-      uint3 vert = normals.face(i);
-      float3 n_e = normalize(normals.vertex(vert.x) + normals.vertex(vert.y) + normals.vertex(vert.z));
-      L += dot(-w_i, n_e) * l_e * a_e;
-    }
-    L = L / dot(p-x, p-x);
+    
+    float3 n_e = normalize(u * normals.vertex(vert.x) + v * normals.vertex(vert.y) + w * normals.vertex(vert.z));
+    
+    L = l_e * dot(-w_i, n_e) / dot(p-x, p-x) * mesh->geometry.no_faces() * a_e;
+
     return true;
   }
   

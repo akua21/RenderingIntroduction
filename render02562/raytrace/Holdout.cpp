@@ -28,6 +28,21 @@ float3 Holdout::shade(const Ray& r, HitInfo& hit, bool emit) const
   // Hint: Use the function tracer->trace_to_closest(...) to trace
   //       a new ray in a direction sampled on the hemisphere around the
   //       surface normal according to the function sample_cosine_weighted(...).
+  // float3 rho_d = get_diffuse(hit);
+  // optix::float3 wj;
+  // float3 Li = make_float3(0.0f, 0.0f, 0.0f);
+  // Ray ray;
+
+  // for (unsigned i = 0; i < samples; i++) {
+  //   wj = sample_cosine_weighted(hit.shading_normal);
+  //   ray = Ray(hit.position, wj, 0, 0.01f);
+  //   HitInfo hit_ray = HitInfo();
+  //   tracer->trace_to_closest(ray, hit_ray);
+
+  //   Li += shade_new_ray(ray, hit_ray, false);
+
+  //   ambient += Li;
+  // }
 
   return ambient*tracer->get_background(r.direction);
 }
