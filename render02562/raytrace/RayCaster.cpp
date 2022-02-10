@@ -14,6 +14,23 @@ using namespace optix;
 
 float3 RayCaster::compute_pixel(unsigned int x, unsigned int y) const
 {
+  // Use the scene and its camera
+  // to cast a ray that computes the color of the pixel at index (x, y).
+  //
+  // Input:  x, y        (pixel index)
+  //
+  // Return: Result of tracing a ray through the pixel at index (x, y).
+  //
+  // Relevant data fields that are available (see RayCaster.h and Scene.h)
+  // win_to_ip           (pixel size (width, height) in the image plane)
+  // lower_left          (lower left corner of the film in the image plane)
+  // scene               (scene with access to the closest_hit function)
+  // scene->get_camera() (camera in the scene)
+  //
+  // Hints: (a) Use the function get_shader(...) to get the shader of the
+  //            intersected material after the ray has been traced.
+  //        (b) Use get_background(...) if the ray does not hit anything.
+
   float3 result = make_float3(0.0f);
 
   for (float2 jit : jitter)
@@ -35,26 +52,6 @@ float3 RayCaster::compute_pixel(unsigned int x, unsigned int y) const
     }
 
   }
-  
-
-
-
-  // Use the scene and its camera
-  // to cast a ray that computes the color of the pixel at index (x, y).
-  //
-  // Input:  x, y        (pixel index)
-  //
-  // Return: Result of tracing a ray through the pixel at index (x, y).
-  //
-  // Relevant data fields that are available (see RayCaster.h and Scene.h)
-  // win_to_ip           (pixel size (width, height) in the image plane)
-  // lower_left          (lower left corner of the film in the image plane)
-  // scene               (scene with access to the closest_hit function)
-  // scene->get_camera() (camera in the scene)
-  //
-  // Hints: (a) Use the function get_shader(...) to get the shader of the
-  //            intersected material after the ray has been traced.
-  //        (b) Use get_background(...) if the ray does not hit anything.
 
   return result / jitter.size();
 }

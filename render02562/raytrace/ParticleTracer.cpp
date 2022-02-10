@@ -97,7 +97,6 @@ void ParticleTracer::trace_particle(const Light* light, const unsigned int caust
   // Forward from all specular surfaces
   while(scene->is_specular(hit.material) && hit.trace_depth < 500)
   { 
-
     switch(hit.material->illum)
     {
     case 3:  // mirror materials
@@ -125,6 +124,7 @@ void ParticleTracer::trace_particle(const Light* light, const unsigned int caust
         float R;
 
         bool trace = trace_refracted(r, hit, r_out, h_out, R);
+        //R=0.1f;
 
         if (mt_random_half_open() < R){
           h_out.has_hit = false;
@@ -145,8 +145,11 @@ void ParticleTracer::trace_particle(const Light* light, const unsigned int caust
     }
   }
 
-  // Store in caustics map at first diffuse surface
+  if (hit.trace_depth > 0 && !scene->is_specular(hit.material))
+  {
+    // Store in caustics map at first diffuse surface
   caustics.store(Phi, hit.position, -r.direction);
+  }
 
   // Hint: When storing, the convention is that the photon direction
   //       should point back toward where the photon came from.

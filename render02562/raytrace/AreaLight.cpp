@@ -13,7 +13,6 @@
 using namespace optix;
 
 bool AreaLight::sample(const float3& pos, float3& dir, float3& L) const
-
 {
   const IndexedFaceSet& normals = mesh->normals;
   L = make_float3(0.0f);
@@ -75,7 +74,6 @@ bool AreaLight::sample(const float3& pos, float3& dir, float3& L) const
   float3 l_e = get_emission(random_triangle);
   float a_e = mesh->face_areas[random_triangle];
   uint3 vert = normals.face(random_triangle);
-
     
   float3 x = pos;
   float3 p = u * mesh->geometry.vertex(vert.x) + v * mesh->geometry.vertex(vert.y) + w * mesh->geometry.vertex(vert.z);
@@ -97,8 +95,6 @@ bool AreaLight::sample(const float3& pos, float3& dir, float3& L) const
 
     return true;
   }
-  
-  
   return false;  
 }
 

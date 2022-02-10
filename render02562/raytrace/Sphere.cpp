@@ -10,6 +10,33 @@ using namespace optix;
 
 bool Sphere::intersect(const Ray& r, HitInfo& hit, unsigned int prim_idx) const
 {
+  // Implement ray-sphere intersection here.
+  //
+  // Input:  r                    (the ray to be checked for intersection)
+  //         prim_idx             (index of the primitive element in a collection, not used here)
+  //
+  // Output: hit.has_hit          (set true if the ray intersects the sphere)
+  //         hit.dist             (distance from the ray origin to the intersection point)
+  //         hit.position         (coordinates of the intersection point)
+  //         hit.geometric_normal (the normalized normal of the sphere)
+  //         hit.shading_normal   (the normalized normal of the sphere)
+  //         hit.material         (pointer to the material of the sphere)
+  //        (hit.texcoord)        (texture coordinates of intersection point, not needed for Week 1)
+  //
+  // Return: True if the ray intersects the sphere, false otherwise
+  //
+  // Relevant data fields that are available (see Sphere.h and OptiX math library reference)
+  // r.origin                     (ray origin)
+  // r.direction                  (ray direction)
+  // r.tmin                       (minimum intersection distance allowed)
+  // r.tmax                       (maximum intersection distance allowed)
+  // center                       (sphere center)
+  // radius                       (sphere radius)
+  // material                     (material of the sphere)
+  //
+  // Hints: (a) The square root function is called sqrt(x).
+  //        (b) There is no need to handle the case where the 
+  //            discriminant is zero separately.
 
   float b = 2.0f * dot((r.origin - center), r.direction); 
   float c = dot((r.origin - center), (r.origin - center)) - (pow(radius, 2));
@@ -38,34 +65,6 @@ bool Sphere::intersect(const Ray& r, HitInfo& hit, unsigned int prim_idx) const
     hit.position = (r.origin + t2*r.direction);
     return true;  
   }
-
-  // Implement ray-sphere intersection here.
-  //
-  // Input:  r                    (the ray to be checked for intersection)
-  //         prim_idx             (index of the primitive element in a collection, not used here)
-  //
-  // Output: hit.has_hit          (set true if the ray intersects the sphere)
-  //         hit.dist             (distance from the ray origin to the intersection point)
-  //         hit.position         (coordinates of the intersection point)
-  //         hit.geometric_normal (the normalized normal of the sphere)
-  //         hit.shading_normal   (the normalized normal of the sphere)
-  //         hit.material         (pointer to the material of the sphere)
-  //        (hit.texcoord)        (texture coordinates of intersection point, not needed for Week 1)
-  //
-  // Return: True if the ray intersects the sphere, false otherwise
-  //
-  // Relevant data fields that are available (see Sphere.h and OptiX math library reference)
-  // r.origin                     (ray origin)
-  // r.direction                  (ray direction)
-  // r.tmin                       (minimum intersection distance allowed)
-  // r.tmax                       (maximum intersection distance allowed)
-  // center                       (sphere center)
-  // radius                       (sphere radius)
-  // material                     (material of the sphere)
-  //
-  // Hints: (a) The square root function is called sqrt(x).
-  //        (b) There is no need to handle the case where the 
-  //            discriminant is zero separately.
 
   return false;
 }

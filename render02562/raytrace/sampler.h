@@ -69,11 +69,8 @@ inline optix::float3 sample_cosine_weighted(const optix::float3& normal)
   double phi = 2 * M_PI * e2;
 
   optix::float3 v = optix::make_float3(cos(phi)*sin(theta), sin(phi)*sin(theta), cos(theta));
-
   rotate_to_normal(normal, v);
-
   return v;
-  //return optix::make_float3(0.0f);
 }
 
 inline optix::float3 sample_Phong_distribution(const optix::float3& normal, const optix::float3& dir, float shininess)

@@ -12,8 +12,11 @@ float3 Volume::shade(const Ray& r, HitInfo& hit, bool emit) const
 {
   // If inside the volume, Find the direct transmission through the volume by using
   // the transmittance to modify the result from the Transparent shader.
+  float s = sqrt(dot(r.origin - hit.position, r.origin - hit.position));
+  float3 sigma_t = get_transmittance(hit);
+  return expf(-sigma_t*s) * Transparent::shade(r, hit, emit);
 
-  return Transparent::shade(r, hit, emit);
+  //return Transparent::shade(r, hit, emit);
 }
 
 float3 Volume::get_transmittance(const HitInfo& hit) const

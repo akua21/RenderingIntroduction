@@ -43,24 +43,6 @@ bool intersect_triangle(const Ray& ray,
 
 bool Triangle::intersect(const Ray& r, HitInfo& hit, unsigned int prim_idx) const
 {
-  float3 n;
-  float t, beta, gamma;
-
-
-  if (optix::intersect_triangle(r, v0, v1, v2, n, t, beta, gamma))
-  {
-    hit.has_hit = true;
-		hit.dist = t;
-		hit.material = &material;
-    hit.geometric_normal = normalize(n);
-    hit.shading_normal = normalize(n);
-    hit.position = r.origin + r.direction*t;
-    return true;
-  }
-  
-
-  return false;
-
   // Implement ray-triangle intersection here.
   //
   // Input:  r                    (the ray to be checked for intersection)
@@ -87,6 +69,21 @@ bool Triangle::intersect(const Ray& r, HitInfo& hit, unsigned int prim_idx) cons
   //       of the function name) to choose between the OptiX implementation and
   //       the function just above this one.
 
+  float3 n;
+  float t, beta, gamma;
+
+
+  if (optix::intersect_triangle(r, v0, v1, v2, n, t, beta, gamma))
+  {
+    hit.has_hit = true;
+		hit.dist = t;
+		hit.material = &material;
+    hit.geometric_normal = normalize(n);
+    hit.shading_normal = normalize(n);
+    hit.position = r.origin + r.direction*t;
+    return true;
+  }
+  return false;
 }
 
 void Triangle::transform(const Matrix4x4& m) 

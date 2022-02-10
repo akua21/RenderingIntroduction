@@ -49,8 +49,8 @@ bool BspTree::closest_hit(Ray& r, HitInfo& hit) const
     intersect_node(r, hit, node);
   }
 
-  return hit.has_hit;
   //return Accelerator::closest_hit(r, hit);
+  return hit.has_hit;
 }
 
 bool BspTree::any_hit(Ray& r, HitInfo& hit) const
@@ -70,8 +70,8 @@ bool BspTree::any_hit(Ray& r, HitInfo& hit) const
     intersect_node(r, hit, node);
   }
 
-  return hit.has_hit;
   //return Accelerator::any_hit(r, hit);
+  return hit.has_hit;
 }
 
 bool BspTree::intersect_min_max(Ray& r) const

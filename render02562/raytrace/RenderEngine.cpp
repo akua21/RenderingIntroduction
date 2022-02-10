@@ -56,12 +56,12 @@ RenderEngine::RenderEngine()
     caustics_particles(20000),                               // Desired number of caustics photons
     done(false), 
     light_pow(optix::make_float3(M_PIf)),                    // Power of the default light
-    light_dir(optix::make_float3(-1.0f)),                    // Direction of the default light
+    light_dir(optix::make_float3(1, -0.1, 0)),                    // Direction of the default light
     default_light(&tracer, light_pow, light_dir),            // Construct default light
-    use_default_light(false),                                 // Choose whether to use the default light or not
+    use_default_light(true),                                 // Choose whether to use the default light or not
     shadows_on(true),
     background(optix::make_float3(0.1f, 0.3f, 0.6f)),        // Background color
-    bgtex_filename("../models/luxo_pxr_campus.jpg"),                                      // Background texture file name
+    bgtex_filename(""),                                      // Background texture file name (../models/luxo_pxr_campus.jpg)
     current_shader(0),
     lambertian(scene.get_lights()),
     photon_caustics(&tracer, scene.get_lights(), 1.0f, 50),  // Max distance and number of photons to search for

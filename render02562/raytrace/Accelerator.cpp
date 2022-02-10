@@ -34,14 +34,6 @@ void Accelerator::init(const vector<Object3D*>& geometry, const vector<const Pla
 
 bool Accelerator::closest_hit(optix::Ray& r, HitInfo& hit) const
 {
-  closest_plane(r, hit);
-
-  for (int i = 0; i < primitives.size(); i++) {
-      if (primitives[i]->geometry->intersect(r, hit, primitives[i]->prim_idx)) {
-          r.tmax = hit.dist;
-      }
-  }
-
   // Loop through all the primitives to find the closest intersection (if any).
   //
   // Input:  r    (the ray to be checked for intersection)
@@ -56,6 +48,14 @@ bool Accelerator::closest_hit(optix::Ray& r, HitInfo& hit) const
   //
   // Hint: Call the intersect(...) function for each primitive object in
   //       the scene. See the functions below this one for inspiration.
+
+  closest_plane(r, hit);
+
+  for (int i = 0; i < primitives.size(); i++) {
+      if (primitives[i]->geometry->intersect(r, hit, primitives[i]->prim_idx)) {
+          r.tmax = hit.dist;
+      }
+  }
 
   return hit.has_hit;
 }

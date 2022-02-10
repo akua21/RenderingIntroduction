@@ -11,6 +11,23 @@ using namespace optix;
 
 bool PointLight::sample(const float3& pos, float3& dir, float3& L) const
 {
+  // Compute output and return value given the following information.
+  //
+  // Input:  pos (the position of the geometry in the scene)
+  //
+  // Output: dir (the direction toward the light)
+  //         L   (the radiance received from the direction dir)
+  //
+  // Return: true if not in shadow
+  //
+  // Relevant data fields that are available (see PointLight.h and Light.h):
+  // shadows    (on/off flag for shadows)
+  // tracer     (pointer to ray tracer)
+  // light_pos  (position of the point light)
+  // intensity  (intensity of the emitted light)
+  //
+  // Hint: Construct a shadow ray using the Ray datatype. Trace it using the
+  //       pointer to the ray tracer.
 
   if (shadows)
   {
@@ -34,26 +51,6 @@ bool PointLight::sample(const float3& pos, float3& dir, float3& L) const
   }
 
   return true;
-  
-
-  // Compute output and return value given the following information.
-  //
-  // Input:  pos (the position of the geometry in the scene)
-  //
-  // Output: dir (the direction toward the light)
-  //         L   (the radiance received from the direction dir)
-  //
-  // Return: true if not in shadow
-  //
-  // Relevant data fields that are available (see PointLight.h and Light.h):
-  // shadows    (on/off flag for shadows)
-  // tracer     (pointer to ray tracer)
-  // light_pos  (position of the point light)
-  // intensity  (intensity of the emitted light)
-  //
-  // Hint: Construct a shadow ray using the Ray datatype. Trace it using the
-  //       pointer to the ray tracer.
-
   
 }
 
@@ -98,6 +95,5 @@ bool PointLight::emit(Ray& r, HitInfo& hit, float3& Phi) const
     Phi = 4 * M_PI * intensity;
     return true;
   }  
-
   return false;
 }

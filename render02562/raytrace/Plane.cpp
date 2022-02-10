@@ -10,32 +10,7 @@ using namespace optix;
 
 bool Plane::intersect(const Ray& r, HitInfo& hit, unsigned int prim_idx) const
 {
-	float t = -(dot(r.origin, onb.m_normal) + d) / dot(r.direction, onb.m_normal);
-
-	if (r.tmin < t && t < r.tmax)
-	{
-		hit.has_hit = true;
-		hit.dist = t;
-		hit.material = &material;
-    hit.geometric_normal = onb.m_normal;
-    hit.shading_normal = onb.m_normal;
-    hit.position = r.origin + r.direction * t;
-
-
-    if (material.has_texture)
-    {
-      float u;
-      float v;
-      get_uv(hit.position, u, v);
-      hit.texcoord = make_float3(u, v, 0);
-    }
-
-
-		return true;
-	}
-
-
-  // Implement ray-plane intersection here.
+	// Implement ray-plane intersection here.
   // It is fine to intersect with the front-facing side of the plane only.
   //
   // Input:  r                    (the ray to be checked for intersection)
@@ -65,7 +40,32 @@ bool Plane::intersect(const Ray& r, HitInfo& hit, unsigned int prim_idx) const
   // Hint: The OptiX math library has a function dot(v, w) which returns
   //       the dot product of the vectors v and w.
 
+  float t = -(dot(r.origin, onb.m_normal) + d) / dot(r.direction, onb.m_normal);
+
+	if (r.tmin < t && t < r.tmax)
+	{
+		hit.has_hit = true;
+		hit.dist = t;
+		hit.material = &material;
+    hit.geometric_normal = onb.m_normal;
+    hit.shading_normal = onb.m_normal;
+    hit.position = r.origin + r.direction * t;
+
+
+    if (material.has_texture)
+    {
+      float u;
+      float v;
+      get_uv(hit.position, u, v);
+      hit.texcoord = make_float3(u, v, 0);
+    }
+
+
+		return true;
+	}
+
   return false;
+  
 }
 
 void Plane::transform(const Matrix4x4& m)

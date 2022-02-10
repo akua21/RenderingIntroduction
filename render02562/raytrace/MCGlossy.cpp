@@ -55,8 +55,6 @@ float3 MCGlossy::shade(const Ray& r, HitInfo& hit, bool emit) const
       Li += shade_new_ray(ray, hit_ray, false) / pdf;
     }
   }
-  
   result = rho_d * Li/N;
-
   return result + Phong::shade(r, hit, emit);
 }
